@@ -1,5 +1,5 @@
 <div align="center">
-   <h1>GScomp-QA: A Subjective Dataset for Quality Assessment of Compressed Gaussian Splatting</h1>
+   <h1>GS-PQM: A Parameter-Domain Quality Metric for Compressed Gaussian Splatting</h1>
    <br />
 
    Pedro Martin, António Rodrigues, João Ascenso, Maria Paula Queluz
