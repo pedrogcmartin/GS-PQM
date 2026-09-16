@@ -22,3 +22,27 @@ Clone the GS-PQM repository and enter the project directory:
 git clone https://github.com/pedrogcmartin/GS-PQM.git
 cd GS-PQM
 ```
+
+## Python Environment
+
+We recommend using a dedicated Conda environment to install the required dependencies:
+
+```bash
+conda create -n gspqm python=3.10
+conda activate gspqm
+pip install -r requirements.txt
+```
+
+The pretrained GS-PQM model is included in the models/ directory, so no training is required to use the metric.
+
+## Running
+
+GS-PQM requires an uncompressed reference GS model and the corresponding compressed/distorted GS model. Both models must be provided as .ply files.
+
+To compute the GS-PQM quality score, run:
+
+```bash
+python gspqm.py --ref path/to/reference/point_cloud.ply --dist path/to/compressed/point_cloud.ply
+```
+
+Use the `--verbose` option to additionally display the four GS-Dist errors and the adaptive-neighborhood statistics.
