@@ -14,3 +14,11 @@
 </div>
 GS-PQM is a novel full-reference quality metric for post-training GS compression that operates directly in the GS parameter domain. GS-PQM estimates perceptual quality from a set of parameter-domain distortion errors (GS-Dist) using a Support Vector Regression model.
 
+## Cloning the Repository
+
+Clone the GS-PQM repository and enter the project directory:
+
+```bash
+git clone https://github.com/pedrogcmartin/GS-PQM.git
+cd GS-PQM
+```
