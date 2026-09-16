@@ -46,3 +46,27 @@ python gspqm.py --ref path/to/reference/point_cloud.ply --dist path/to/compresse
 ```
 
 Use the `--verbose` option to additionally display the GS-Dist errors and the adaptive-neighborhood statistics.
+
+## Examples
+
+The `examples/` directory contains a reference GS model and its corresponding compressed version:
+
+```text
+examples/
+├── ref/
+│   └── point_cloud.ply
+└── dist/
+    └── point_cloud.ply
+```
+
+To run GS-PQM on the provided example, use:
+
+```bash
+python gspqm.py --ref examples/ref/point_cloud.ply --dist examples/dist/point_cloud.ply
+```
+
+The expected output is:
+
+```bash
+GS-PQM predicted DMOS: 4.888012
+```
