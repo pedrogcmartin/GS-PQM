@@ -23,12 +23,12 @@ git clone https://github.com/pedrogcmartin/GS-PQM.git
 cd GS-PQM
 ```
 
-## Python Environment
+## Installation
 
 We recommend using a dedicated Conda environment to install the required dependencies:
 
 ```bash
-conda create -n gspqm python=3.10
+conda create -n gspqm python=3.9
 conda activate gspqm
 pip install -r requirements.txt
 ```
@@ -45,4 +45,4 @@ To compute the GS-PQM quality score, run:
 python gspqm.py --ref path/to/reference/point_cloud.ply --dist path/to/compressed/point_cloud.ply
 ```
 
-Use the `--verbose` option to additionally display the four GS-Dist errors and the adaptive-neighborhood statistics.
+Use the `--verbose` option to additionally display the GS-Dist errors and the adaptive-neighborhood statistics.
